@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.proyectomas">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoMAS">
+        <activity android:name=".ReporteProductoActivity"></activity>
+        <activity android:name=".ListarModificarProveedorActivity" />
+        <activity android:name=".ModificarProveedorActivity" />
+        <activity android:name=".RegistrarProveedorActivity" />
+        <activity android:name=".RegistrarUsuarioActivity" />
+        <activity android:name=".ModificarStockProductoActivity" />
+        <activity android:name=".ListarModificarStockProductoActivity" />
+        <activity android:name=".ConsultarStockActivity" />
+        <activity android:name=".ModificarProductoActivity" />
+        <activity android:name=".ListarModificarProductoActivity" />
+        <activity android:name=".AnyOrientationCaptureActivity" />
+        <activity android:name=".BuscarProductoActivity" />
+        <activity android:name=".RegistrarProductosActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

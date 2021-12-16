@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarProductoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="408dp"
+        android:layout_height="98dp"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="@color/primary_mass"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="138dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|center_horizontal"
+            app:srcCompat="@drawable/mas" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTxtBuscarCodigoProducto"
+        android:layout_width="323dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Ingrese el código del producto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/btnBuscarProductoPorCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtBuscarCodigoProducto"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/btnListarProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BuscarxQR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtBuscarCodigoProducto"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ListView
+        android:id="@+id/lvProductos"
+        android:layout_width="332dp"
+        android:layout_height="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarProductos"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <Button
+        android:id="@+id/btnRegresarMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvProductos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
